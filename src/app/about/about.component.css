@@ -41,3 +41,52 @@ a:hover:not(.active) {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+.embedly-card {
+  margin:0px;
+}
+.embedly-card h4{
+  padding:20px 0px;
+  margin:0px;
+  font-size:18px;
+  font-style: italic;
+}
+a{
+  color:#c3c6c9;
+}
+.image-container{
+  display:flex;
+  justify-content: space-around;
+  padding:60px 0px;
+}
+.image-container div{
+  height:300px;
+  width:300px;
+  border-radius:50%;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+@media only screen and (max-width: 920px){
+  .image-container div{
+    width:200px;
+    height:200px;
+  }
+  .embedly-card h4{
+    font-size:12px;
+  }
+}
+@media only screen and (max-width: 640px){
+  .image-container{
+    flex-direction: column;
+    padding:0px 0px 120px 0px;
+  }
+  .image-container div{
+    width:200px;
+    height:200px;
+    margin: auto;
+    margin-top:50px;
+  }
+  .embedly-card h4{
+    font-size:14px;
+  }
+}
